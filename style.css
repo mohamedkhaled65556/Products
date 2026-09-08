@@ -4,12 +4,12 @@ section {
   font-weight: 600;
   background-color: #eb9900;
   background-attachment: fixed;
-  height: 124vh;
+  height: 125vh;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: -160px;
-  padding: 7%;
+  margin-top: -150px;
+  padding: 2%;
 }
 
 .product {
@@ -45,7 +45,7 @@ section {
   top: 0;
   display: none;
   color: wheat;
-  margin-left: -87px;
+  margin-left: -2%;
 }
 
 .table {
@@ -101,7 +101,7 @@ section {
   top: 0;
   display: none;
   color: wheat;
-  margin-left: -87px;
+  margin-left: -2%;
 }
 
 button i {
