@@ -4,11 +4,10 @@ section {
   font-weight: 600;
   background-color: #eb9900;
   background-attachment: fixed;
-  height: 125vh;
+  min-height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: -150px;
   padding: 2%;
 }
 
@@ -51,6 +50,7 @@ section {
 .table {
   text-align: center;
   padding: 0 7%;
+  overflow-x: auto;
 }
 
 .table th {
