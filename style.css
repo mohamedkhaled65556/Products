@@ -2,7 +2,7 @@ section {
   align-content: center;
   font-style: oblique;
   font-weight: 600;
-  background-color: #eb9900;
+  background-color: #5f0d01;
   background-attachment: fixed;
   min-height: 100vh;
   width: 100%;
@@ -12,25 +12,25 @@ section {
 }
 
 .product {
-  background-color: #eb5e00;
+  background-color: #7c0000;
   padding: 0.5%;
   margin: 2% 10%;
   text-align: center;
   font-size: 40px;
   background-size: auto;
-  border: 3px dashed #eb9900;
-  color: black;
+  border: 3px dashed #9a3b0b;
+  color: white;
 }
 
 #btn1 {
   text-align: center;
   margin: 0 0 10px 7%;
-  background-color: #eb5e00;
-  color: black;
+  background-color: #a51700;
+  color: white;
 }
 
 #btn1:hover {
-  background-color: #ce5200;
+  background-color: #8e1300;
 }
 
 .modalBody {
@@ -43,7 +43,7 @@ section {
   z-index: auto;
   top: 0;
   display: none;
-  color: wheat;
+  color: white;
   margin-left: -2%;
 }
 
@@ -58,35 +58,35 @@ section {
 }
 
 .table th {
-  background-color: #eb5e00;
-  color: black;
+  background-color: #7c0000;
+  color: white;
 }
 
 .table td {
-  background-color: #eb9900;
-  color: black;
+  background-color: #5f0d01;
+  color: white;
 }
 
 #btn2 {
   text-align: center;
   margin: 0 10px 3px 7%;
-  background-color: #eb5e00;
-  color: black;
+  background-color: #a41800;
+  color: white;
 }
 
 #btn2:hover {
-  background-color: #bd4b00;
+  background-color: #8e1300;
 }
 
 #btn3 {
   text-align: center;
   margin: 0 0px 3px 7%;
   background-color: #ed2400;
-  color: black;
+  color: white;
 }
 
 #btn3:hover {
-  background-color: #c21e01;
+  background-color: #d32001;
 }
 
 .btn {
@@ -104,12 +104,13 @@ section {
   z-index: auto;
   top: 0;
   display: none;
-  color: wheat;
+  color: white;
   margin-left: -2%;
 }
 
 button i {
   background-color: transparent !important;
+  color: white !important;
 }
 
 #close {
@@ -119,15 +120,15 @@ button i {
 }
 
 #close:hover {
-  background-color: #c21e01;
+  background-color: #d32001;
 }
 
 #save {
   text-align: center;
   margin: 0 0px 3px 7%;
-  background-color: #eb5e00;
+  background-color: #a41800;
 }
 
 #save:hover {
-  background-color: #ce5200;
+  background-color: #8e1300;
 }
