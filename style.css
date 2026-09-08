@@ -45,6 +45,7 @@ section {
   top: 0;
   display: none;
   color: wheat;
+  margin-left: -87px;
 }
 
 .table {
@@ -100,6 +101,7 @@ section {
   top: 0;
   display: none;
   color: wheat;
+  margin-left: -87px;
 }
 
 button i {
