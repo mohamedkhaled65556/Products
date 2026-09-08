@@ -4,11 +4,12 @@ section {
   font-weight: 600;
   background-color: #eb9900;
   background-attachment: fixed;
-  height: 150vh;
+  height: 124vh;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: -230px;
+  margin-top: -160px;
+  padding: 7%;
 }
 
 .product {
