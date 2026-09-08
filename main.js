@@ -23,7 +23,7 @@ const showProducts = () => {
     table.innerHTML += `<tr class="table">
     <td>${index + 1}</td>
     <td>${el.name}</td>
-    <td>${el.price}$</td>
+    <td id="td1">${el.price}$</td>
     <td>${el.qty}</td>
     <td>
     <button id="btn2" class="btn" onclick="Edit(${index})">
