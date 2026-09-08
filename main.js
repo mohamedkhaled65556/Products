@@ -1,8 +1,8 @@
 let products = [
-  { name: "iphone 17", price: 200, qty: 4 },
   { name: "iphone X", price: 400, qty: 6 },
-  { name: "iphone 18", price: 500, qty: 10 },
-  { name: "iphone 20", price: 700, qty: 2 },
+  { name: "iphone 17", price: 1000, qty: 4 },
+  { name: "iphone 14", price: 500, qty: 10 },
+  { name: "iphone 15", price: 700, qty: 5 },
 ];
 let newPhoneModal = document.getElementById("newPhoneModal");
 let table = document.querySelector("tbody");
