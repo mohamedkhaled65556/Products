@@ -22,11 +22,19 @@ section {
   color: white;
 }
 
+.actionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #btn1 {
+  display: flex;
   text-align: center;
-  margin: 0 0 10px 7%;
   background-color: #a51700;
   color: white;
+  border-radius: 15px;
+  margin-left: 112px;
 }
 
 #btn1:hover {
@@ -133,6 +141,45 @@ button i {
   background-color: #8e1300;
 }
 
-#td1 {
-  color: #d4af37;
+.price {
+  color: #d4af37 !important;
+}
+
+.search {
+  padding: 0 7%;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 2px 12px;
+  width: 160px;
+  margin-right: -5px;
+  font-style: oblique;
+}
+
+#btn4 {
+  display: flex;
+  text-align: center;
+  background-color: #a51700;
+  color: white;
+  border-radius: 15px;
+}
+
+#btn4:hover {
+  background-color: #8e1300;
+}
+
+#btn5 {
+  display: flex;
+  text-align: center;
+  background-color: #a51700;
+  color: white;
+  border-radius: 15px;
+  margin-left: 45px;
+}
+
+#btn5:hover {
+  background-color: #8e1300;
 }
