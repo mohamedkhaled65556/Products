@@ -16,6 +16,7 @@ let phoneNameInputE = document.querySelector("#phoneNameInputE");
 let phonePriceInputE = document.querySelector("#phonePriceInputE");
 let phoneQtyInputE = document.querySelector("#phoneQtyInputE");
 let globalIndex = null;
+let searchInput = document.querySelector(".input");
 
 const showProducts = () => {
   table.innerText = "";
@@ -23,7 +24,7 @@ const showProducts = () => {
     table.innerHTML += `<tr class="table">
     <td>${index + 1}</td>
     <td>${el.name}</td>
-    <td id="td1">${el.price}$</td>
+    <td class="price">${el.price}$</td>
     <td>${el.qty}</td>
     <td>
     <button id="btn2" class="btn" onclick="Edit(${index})">
@@ -100,3 +101,42 @@ const editPhone = () => {
     closeModal();
   }
 };
+
+const searchByName = () => {
+  let searchValue = searchInput.value.replace(/\s+/g, "").toLowerCase();
+  let IsFound = false;
+  if (!searchInput.value.trim()) return;
+  searchInput.value = "";
+  table.innerHTML = "";
+  products.forEach((el, index) => {
+    let name = el.name.replace(/\s+/g, "").toLowerCase();
+    if (name.includes(searchValue)) {
+      IsFound = true;
+      table.innerHTML += `<tr class="table">
+      <td>${index + 1}</td>
+      <td>${el.name}</td>
+      <td class="price">${el.price}$</td>
+      <td>${el.qty}</td>
+      <td>
+      <button id="btn2" class="btn" onclick="Edit(${index})">
+      <i class="fa-regular fa-pen-to-square"></i> Edit</button>
+      
+      <button id="btn3" class="btn" onclick="Delete(${index})">
+      <i class="fa-solid fa-trash-can"></i> Delete</button>
+      </td>
+      </tr>`;
+    }
+  });
+  if (!IsFound) {
+    alert("This product not found");
+  }
+};
+
+products.forEach((el) => {
+  let searchValue = searchInput.value.replace(/\s+/g, "").toLowerCase();
+  let name = el.name.replace(/\s+/g, "").toLowerCase();
+  if (name.includes(searchValue)) {
+    let list = document.querySelector("#list");
+    list.innerHTML += `<option value="${el.name}"></option>`;
+  }
+});
