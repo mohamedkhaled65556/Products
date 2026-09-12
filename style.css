@@ -185,7 +185,11 @@ button i {
 }
 
 @media (max-width: 768px) {
-  #btn5 {
-    margin-right: 50px;
+  .actionsContainer {
+    width: 100%;
+    margin-left: 0;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
