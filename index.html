@@ -89,9 +89,29 @@
           </div>
         </div>
       </div>
-      <button id="btn1" class="btn" onclick="openModal()">Add New Phone</button>
+      <div class="actionsContainer">
+        <button id="btn1" class="btn" onclick="openModal()">
+          Add New Phone
+        </button>
+        <div>
+          <button onclick="showProducts()" id="btn5" class="btn">
+            Show All
+          </button>
+        </div>
+        <div class="search d-flex align-items-center">
+          <input
+            list="list"
+            type="text"
+            class="input"
+            placeholder="Enter Phone ID"
+          />
+          <datalist id="list" class="bg-dar">
+          </datalist>
+          <button id="btn4" class="btn" onclick="searchByName()">Search</button>
+        </div>
+      </div>
       <div class="table">
-        <table class="table table-borderless">
+        <table class="table table-borderless mt-2">
           <thead>
             <tr>
               <th scope="col">#</th>
