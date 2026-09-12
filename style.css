@@ -183,3 +183,9 @@ button i {
 #btn5:hover {
   background-color: #8e1300;
 }
+
+@media (max-width: 768px) {
+  #btn5 {
+    margin-right: 50px;
+  }
+}
