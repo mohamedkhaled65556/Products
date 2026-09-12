@@ -36,7 +36,21 @@ const showProducts = () => {
     </tr>`;
   });
 };
+
 showProducts();
+const searchList = () => {
+  list.innerHTML = "";
+  products.forEach((el) => {
+    let searchValue = searchInput.value.replace(/\s+/g, "").toLowerCase();
+    let name = el.name.replace(/\s+/g, "").toLowerCase();
+    if (name.includes(searchValue)) {
+      let list = document.querySelector("#list");
+      list.innerHTML += `<option value="${el.name}"></option>`;
+    }
+  });
+};
+
+searchList();
 
 const openModal = () => {
   newPhoneModal.style.display = "flex";
@@ -62,6 +76,7 @@ const addNewPhone = () => {
     products.push(product);
     closeModal();
     showProducts();
+    searchList();
   }
 };
 
@@ -75,6 +90,7 @@ const Delete = (index) => {
   if (isConfirm) {
     products.splice(index, 1);
     showProducts();
+    searchList();
   }
 };
 
@@ -99,6 +115,7 @@ const editPhone = () => {
     products[globalIndex].qty = phoneQtyInputE.value;
     showProducts();
     closeModal();
+    searchList();
   }
 };
 
@@ -131,12 +148,3 @@ const searchByName = () => {
     alert("This product not found");
   }
 };
-
-products.forEach((el) => {
-  let searchValue = searchInput.value.replace(/\s+/g, "").toLowerCase();
-  let name = el.name.replace(/\s+/g, "").toLowerCase();
-  if (name.includes(searchValue)) {
-    let list = document.querySelector("#list");
-    list.innerHTML += `<option value="${el.name}"></option>`;
-  }
-});
